@@ -382,12 +382,28 @@ a {
   min-width: 50px;
   height: auto;
   min-height: 50px;
-
+  animation: float 3s ease-in-out infinite;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   border: solid 1px #cccccc;
 }
+
+@keyframes float{
+  0%{ 
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10%);
+  }
+  0%{
+    transform: translateY(0);
+  }
+}
+
+
+
+
 .contOut .contIn h1 {
   width: 45%;
   float: left;
@@ -484,6 +500,7 @@ a {
   padding-bottom: 20px;
 }
 .skills h3 {
+  animation: float 3s ease-in-out infinite;
   color: #000520;
   margin: 20px 20px 10px 20px;
   text-transform: uppercase;
